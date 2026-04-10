@@ -268,15 +268,15 @@ export function HomePage({ onNavigate }: HomePageProps) {
           {/* 2026 Fundraising Progress */}
           <div className="mb-0 rounded-full px-4 md:px-8 py-6">
             <div className="mb-4">
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 text-center md:text-left">2026 Hui Bon Hoa Scholarship Fund</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 text-center whitespace-nowrap">2026 HBH Scholarship Fund</h3>
               
-              <div className="flex justify-center md:justify-end mb-3">
-                <div className="text-center md:text-right">
+              <div className="flex justify-center mb-3">
+                <div className="text-center">
                   <span className="text-3xl md:text-2xl font-bold text-white block">
-                    ${currentAmount.toLocaleString()}
+                    £{currentAmount.toLocaleString()}
                   </span>
                   <span className="text-base md:text-sm text-white">
-                    of ${fundraisingGoal.toLocaleString()}
+                    of £{fundraisingGoal.toLocaleString()}
                   </span>
                 </div>
               </div>
@@ -287,9 +287,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               className="h-3 mb-2 border-2 border-white rounded-full"
             />
             
-            <p className="text-xs text-white/90 text-center md:text-left">
-              {Math.round(progressPercentage)}% funded • {fundraisingGoal - currentAmount > 0 ? `$${(fundraisingGoal - currentAmount).toLocaleString()} to go` : 'Goal reached!'}
-            </p>
+            
           </div>
         </div>
       </section>
@@ -299,7 +297,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Support a Scholar Today!</h2>
           <p className="text-xl mb-8 text-gray-100">
-            No admin costs. No platform fees. No deductions.
+            No admin costs. No platform fees. <br className="md:hidden" />No deductions.
             <br />
             Every dollar goes directly towards a scholar's tuition.
           </p>
