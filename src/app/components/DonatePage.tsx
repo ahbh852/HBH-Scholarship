@@ -33,14 +33,14 @@ export function DonatePage() {
     }
   };
 
-  const monzoBankDetails = `UK Monzo Account (GBP)
+  const monzoBankDetails = `UK Monzo Account (for GBP)
 Account Name: Alexandre Hoa
 Sort Code: 04-00-04
 Account Number: 30904958
 IBAN: GB47MONZO4000430904958`;
 
-  const hsbcBankDetails = `HK HSBC Account (HKD/USD)
-Account Name: Alexandre Hui Bon Hoa
+  const hsbcBankDetails = `HK HSBC Account (for HKD or USD)
+Account Name: Alexandre G.P. Hui Bon Hoa
 Account Number: 834 043622 833
 SWIFT Code: HSBCHKHHHKH
 Bank Name: The Hongkong and Shanghai Banking Corporation Limited
@@ -155,33 +155,33 @@ Bank Branch: Park Lane`;
           
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 flex flex-col">
-              <h3 className="font-semibold text-[#2d3e50] mb-2">UK Monzo Account (GBP)</h3>
+              <h3 className="font-semibold text-[#2d3e50] mb-2">UK Monzo Account (for GBP)</h3>
               <div className="space-y-1 text-sm text-gray-700 flex-1">
                 <p><span className="font-medium">Account Name:</span> Alexandre Hoa</p>
                 <p><span className="font-medium">Sort Code:</span> 04-00-04</p>
                 <p><span className="font-medium">Account Number:</span> 30904958</p>
                 <p><span className="font-medium">IBAN:</span> GB47MONZO4000430904958</p>
               </div>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="w-full mt-3 border-[#2d3e50] text-[#2d3e50] hover:bg-[#2d3e50] hover:text-white"
                 onClick={() => copyToClipboard(monzoBankDetails, "Monzo")}
               >
                 Copy Details
               </Button>
             </div>
-            
+
             <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 flex flex-col">
-              <h3 className="font-semibold text-[#2d3e50] mb-2">HK HSBC Account (HKD/USD)</h3>
+              <h3 className="font-semibold text-[#2d3e50] mb-2">HK HSBC Account (for HKD or USD)</h3>
               <div className="space-y-1 text-sm text-gray-700 flex-1">
-                <p><span className="font-medium">Account Name:</span> Alexandre Hui Bon Hoa</p>
+                <p><span className="font-medium">Account Name:</span> Alexandre G.P. Hui Bon Hoa</p>
                 <p><span className="font-medium">Account Number:</span> 834 043622 833</p>
                 <p><span className="font-medium">SWIFT Code:</span> HSBCHKHHHKH</p>
                 <p><span className="font-medium">Bank Name:</span> The Hongkong and Shanghai Banking Corporation Limited</p>
                 <p><span className="font-medium">Bank Branch:</span> Park Lane</p>
               </div>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="w-full mt-3 border-[#2d3e50] text-[#2d3e50] hover:bg-[#2d3e50] hover:text-white"
                 onClick={() => copyToClipboard(hsbcBankDetails, "HSBC")}
               >

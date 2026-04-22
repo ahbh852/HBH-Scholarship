@@ -3,11 +3,11 @@
 
 export const FUNDRAISING_CONFIG = {
   // Current amount raised (in GBP)
-  currentAmount: 0,
-  
+  currentAmount: 5500,
+
   // Campaign goal (in GBP)
   fundraisingGoal: 17200,
-  
+
   // Campaign year
   year: 2026,
 } as const;
