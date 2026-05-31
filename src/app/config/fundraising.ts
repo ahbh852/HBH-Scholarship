@@ -3,7 +3,7 @@
 
 export const FUNDRAISING_CONFIG = {
   // Current amount raised (in GBP)
-  currentAmount: 5500,
+  currentAmount: 15700,
 
   // Campaign goal (in GBP)
   fundraisingGoal: 17200,
